@@ -71,6 +71,7 @@ html{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    position: relative;
     height: 100vh;
 }
 
@@ -98,58 +99,61 @@ html{
 .navegation-item{
     border-right: 1px solid rgba(255, 255, 255, 1);
     display: inline-block;
-    padding: 0.5em 1em;
+    padding: 0.2em 1em;
 }
 
 .navegation-item:nth-last-of-type(1){
     border: none;
 }
 
-nav ul li a{
-    text-decoration: none;
-    color: white;
-    font-size: 0.95rem;
+.navegation-link{
+    color: #fff;
+    font-size: .8rem;
     font-weight: 500;
     letter-spacing: 1px;
+    text-decoration: none;
     text-transform: uppercase;
     word-spacing: 3px;
 }
 
-nav ul li a:hover{
+.navegation-link:hover{
     border-bottom: 3px solid rgb(15, 99, 167);
 }
 
 .home-container{
-    display: inline-block;
-    margin-left: 50%;
-    margin-top: 100px;
-    width: /*900px;*/100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%,-50%);
     letter-spacing: 1px;
     word-spacing: 3px;
-    transform: translate(-50%, 50%);
 }
 
 .btn-generic, input[type=submit]{
-    display: inline-block;
-    padding: 10px 30px;
-    font-weight: 300;
-    text-decoration: none;
-    border-radius: 200px;
     border: 2px solid rgb(15, 99, 167);
-    color: white;
-    margin-right: 5px;
+    border-radius: 200px;
+    color: #fff;
+    display: inline-block;
+    font-weight: 300;
     font-size: 20px;
+    margin-right: 5px;
     margin-bottom: 10px;
+    padding: 10px 30px;
+    transition: all .3s;
+    text-decoration: none;
 }
 
 .btn-generic:hover, input[type=submit]:hover{
     background-color: rgb(15, 99, 167);
 }
 
+.btn-generic:active, input[type=submit]:active{
+    transform: scale(.9);
+}
+
 /*Section Description*/
 
-.text-center
-{
+.text-center{
     line-height: 145%;
     width: 70%;
     margin-left: 15%;
@@ -158,40 +162,34 @@ nav ul li a:hover{
 
 /*Sections Plans*/
 
-.section-plans
-{
+.section-plans{
     background-color: #f4f4f4;
 }
 
-.plan-content
-{
+.plan-content{
     background-color: #fff;
     border-radius: 5px;
-    width: 365px;
-    margin-left: 5%;
     box-shadow: 0 2px 2px #efefef;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    margin: auto;
+    width: 365px;
 }
 
-.plan-content div
-{
-    padding: 15px;
+.div-content{
     border-bottom: 1px solid #e8e8e8;
+    padding: 15px;
 }
 
-.btn-generic.btn
-{
-    color: black;
+.btn-generic.btn{
+    color: #000000;
 } 
 
-.btn-generic.btn:hover,input[type=submit]:hover
-{
+.btn-generic.btn:hover,input[type=submit]:hover{
     color: white;
 }
 
-.plan-price
-{
+.plan-price{
     font-size: 300%;
     margin-bottom: 10px;
     font-weight: 100;
