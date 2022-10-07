@@ -16,40 +16,42 @@
     <script src="./assets/JavaScript/scrollomatic.js"></script>
 </head>
 <body>
-    <header id="home">
+    <header class="header" id="home">
         <div class="menu_top">
-            <a href="#home" class="scroll"><img class="logo" src="/assets/Images/logo3.png" alt="Page Logo" title="Page Logo"></a>
-
-            <nav>
-                <ul>
-                    <li><a href="#home" class="scroll">Home</a></li>
-                    <li><a href="#us" class="scroll">Us</a></li>
-                    <li><a href="#proyects" class="scroll">Proyects</a></li>
-                    <li><a href="#plans" class="scroll">Plans</a></li>
-                    <li><a href="#comments" class="scroll">Comments</a></li>
-                </ul>
-            </nav>
+            <div class="top-1">
+                <a href="#home" class="scroll"><img class="logo" src="/assets/Images/logo3.png" alt="Page Logo" title="Jonathan"></a>
+            </div>
+            <div class="top-2">
+                <nav class="navegation">
+                    <ul class="list-navegation">
+                        <li class="navegation-item"><a href="#home" class="scroll">Home</a></li>
+                        <li class="navegation-item"><a href="#us" class="scroll">Us</a></li>
+                        <li class="navegation-item"><a href="#proyects" class="scroll">Proyects</a></li>
+                        <li class="navegation-item"><a href="#plans" class="scroll">Plans</a></li>
+                        <li class="navegation-item"><a href="#comments" class="scroll">Comments</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-
         <div class="home-container">
-            <h1>Jonathan Web Development</h1>
+            <h1 class="title">Jonathan Blandón</h1>
+            <h2 class="description">Programmer and Web Developper</h2>
             <a class="btn-generic btn-contact scroll" href="#comments">Contact</a>
             <a class="btn-generic btn-more scroll" href="#proyects">See more</a>
         </div>
-
     </header> 
     <body>
-        <section class="section-description" id="us"> 
+        <section class="section-description content" id="us"> 
             <div class="row">
-                <h2>Web Desing</h2>
+                <h2 class="sub-title">Web Desing</h2>
                 <p class="text-center">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt earum laboriosam, praesentium excepturi hic mollitia temporibus fugiat eius repudiandae cupiditate itaque? Repellat odio recusandae minus veniam. Qui corporis magni quaerat.
                 </p>
             </div>
         </section>
-        <section class="section-plans" id="plans">
+        <section class="section-plans content" id="plans">
             <div class="row">
-                <h2>Available plans</h2>
+                <h2 class="sub-title">Available plans</h2>
             </div>
             <div class="row">
                 <div class="col span-1-off-3">
@@ -133,8 +135,8 @@
             </div>
         </section>
 
-        <section class="section-image" id="proyects">
-            <h2>our projects</h2>
+        <section class="section-image content" id="proyects">
+            <h2 class="sub-title">our projects</h2>
             <ul class="proyects-image clearfix">
                 <li><figure class="photo"><img src="/assets/Images/image1.jpg" alt=""></figure></li>
                 <li><figure class="photo"><img src="/assets/Images/image2.jpg" alt=""></figure></li>
@@ -149,9 +151,9 @@
             </ul> 
         </section>
 
-        <section class="section-form" id="comments">
+        <section class="section-form content" id="comments">
             <div class="row">
-                <h2>Comments</h2>
+                <h2 class="sub-title">Comments</h2>
             </div>
             <div class="row">
                 <form action="#" method="post" class="contact-form">
@@ -204,13 +206,11 @@
         </section>
         
     </body>
-
-    <section class="section-img-footer">
+    <section class="section-img-footer content">
         <div class="row">
-            <h2>Web</h2>
+            <h2 class="sub-title">Web</h2>
         </div>
     </section>
-
     <footer>
         <div class="row row_footer">
             <div class="col span-1-of-3">

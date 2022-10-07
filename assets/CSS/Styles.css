@@ -1,14 +1,17 @@
 /*Diseño General*/
-
 *{
     padding: 0;
-    margin: 0;
     box-sizing: border-box;
+}
+
+body{
+    margin: 0;
 }
 
 .row{
     max-width: 1140px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 html{
@@ -20,56 +23,63 @@ html{
     text-rendering: optimizeLegibility;
 }
 
-section
-{
+.content{
     padding: 85px 0 50px ;
 }
 
 /*Encabezados*/
 
-h1{
+.title,
+.description{
+    color: #fff;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
     margin-top: 0;
     margin-bottom: 20px;    
-    font-size: 240%;
     word-spacing: 4px;
-    letter-spacing: 1px;
-    color: #fff;
 }
 
-h2
-{
-    font-size: 180%;
-    word-spacing: 2px;
-    text-align: center;
+.description{
+    font-size: 1.5rem;
+}
+
+.sub-title{
+    font-size: 2rem;
+    letter-spacing: 1px;
     margin-bottom: 30px;
-    letter-spacing: 1px;
+    text-align: center;
+    word-spacing: 2px;
 }
 
-h2:after
-{
-    display: block;
-    height: 2px;
+.sub-title:after{
     background-color: rgb(15, 99, 167);
     content: "";
+    display: block;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;    
     width: 400px;
-    margin: 0 auto;
-    margin-top: 15px;
 }
 
 /*Nav*/
 
 /*Home Container*/
 
-header{
+.header{
     background-image: linear-gradient(rgba(0,0,0,0.705), rgba(0,0,0,0.705)), url(../Images/background.jpg);
     background-size: cover;
     background-position: center;
-    height: 100vh;
     background-attachment: fixed;
+    height: 100vh;
 }
 
 .menu_top{
     background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 55px;
     position: fixed;
     width: 100%;
     z-index: 100;
@@ -77,31 +87,21 @@ header{
 
 .logo{
     height: 70px;
-    width: auto;
-    float: left;
-    margin-left: 150px;
-    margin-top: 5px;
-    margin-bottom: 5px;
 }
 
-nav{
-    float: right;
-    margin-top: 25px;
-    margin-right: 50px;
-    text-align: right;
-}
-
-nav ul {
+.list-navegation{
+    display: flex;
+    justify-content: space-between;
     list-style: none;
 }
 
-nav ul li{
+.navegation-item{
     border-right: 1px solid rgba(255, 255, 255, 1);
     display: inline-block;
     padding: 0.5em 1em;
 }
 
-nav ul li:nth-last-of-type(1){
+.navegation-item:nth-last-of-type(1){
     border: none;
 }
 
