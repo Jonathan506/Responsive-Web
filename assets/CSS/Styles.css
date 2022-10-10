@@ -186,33 +186,37 @@ html{
 } 
 
 .btn-generic.btn:hover,input[type=submit]:hover{
-    color: white;
+    color: #fff;
 }
 
 .plan-price{
-    font-size: 300%;
-    margin-bottom: 10px;
-    font-weight: 100;
     color: rgb(15, 99, 167) ;
+    font-size: 300%;
+    font-weight: 100;
+    margin-bottom: 10px;
 }
 
-.plan-content ul
+.list-plan
 {
     list-style: none;
 }
 
-.plan-content ul li
+.list-plan-item
 {
     padding: 5px 0;
 }
 
-.proyects-image
-{
+/*End Section Plans*/
+
+
+/*Section Proyects*/
+
+.proyects-image{
     list-style: none;
     width: 100%;
 }
 
-.proyects-image li{
+.list-image-item{
     display: block;
     float: left;
     width: 25%;
@@ -253,18 +257,22 @@ html{
     visibility: hidden;
 }
 
+/*End Section Proyects*/
+
 /*Comments-forms*/
 
 .contact-form{
     width: 60%;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 input[type=text],input[type=email],select,textarea{
-    width: 100%;
-    padding: 7px;
+    font-size: 1rem;
     border-radius: 3px;
     border: 1px solid #ccc;
+    padding: 7px;
+    width: 100%;
 }
 
 input[type=checkbox]{
@@ -276,8 +284,10 @@ input[type=checkbox]{
 }
 
 input[type=submit]{
-    color: black;
+    color: #000000;
 }
+
+/*End comments form*/
 
 /*IMAGE-FOOTER*/
 
@@ -285,21 +295,23 @@ input[type=submit]{
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0,0,0,0.8)), url(/assets/Images/background.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/assets/Images/background.jpg);
     background-size: cover;
-    color: #fff;
     background-attachment: fixed;
+    color: #fff;
 }
+
+/*End Image-Footer*/
 
 /*Footer*/
 
 footer{
     background-color: rgb(31, 29, 29);
+    font-size: 60%;
     padding: 30px;
-    font-size: 80%;
 }
 
 .footer-nav{
-    list-style: none;
     float: left;
+    list-style: none;
 }
 
 .footer_up{
@@ -307,16 +319,12 @@ footer{
     text-align: center;
 }
 
-.footer_up li a img{
+.footer-image-center{
     width: 40px;
 }
 
-.footer_up li,
-.footer_up li a,
-.footer-nav li,
-.footer-nav li a, 
-.social-links li,
-.social-links li a{
+.footer-item,
+.footer-links{
     display: inline-block;
     text-decoration: none;
     margin-right: 20px;
@@ -332,13 +340,13 @@ footer{
     list-style: none;
 }
 
-.footer-nav li a:hover,
-.footer-nav li a:active{
+.footer-links:hover,
+.footer-links:active{
     color: #ddd;
 }  
 
-.social-links li a:link,
-.social-links li a:visited{
+.footer-links:link,
+.footer-links:visited{
     font-size: 160%;
 }
 
@@ -433,7 +441,7 @@ footer{
     section{
         padding: 25px 0;
     }
-.home-container{
-    margin-top: 140opx;
+    .home-container{
+    margin-top: 140px;
 }
 }
